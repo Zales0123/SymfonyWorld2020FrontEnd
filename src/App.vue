@@ -1,20 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+<!--      <router-link v-if="this.$session && this.$session.get('cart') != null" :to="'/cart/'+this.$session.get('cart')">Cart</router-link>-->
+      <router-link :to="'/cart/'+this.$session.get('cart')">Cart</router-link>
+<!--      <router-link v-if="this.$session && this.$session.get('token') != null" :to="'/wishlists/'">Wishlists</router-link>-->
+      <router-link :to="'/wishlists/'">Wishlists</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
@@ -24,5 +19,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a {
+  color: #42b983;
+  margin: 0 0.5em;
 }
 </style>

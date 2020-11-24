@@ -1,4 +1,6 @@
-# symfony-world-2020
+# SymfonyWorld2020
+
+Sylius API workshop - test Vue.js application
 
 ## Project setup
 ```
