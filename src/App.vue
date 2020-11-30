@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link>
 <!--      <router-link v-if="this.$session && this.$session.get('cart') != null" :to="'/cart/'+this.$session.get('cart')">Cart</router-link>-->
-      <router-link :to="'/cart/'+this.$session.get('cart')">Cart</router-link>
+<!--      <router-link :to="'/cart/'+this.$session.get('cart')">Cart</router-link>-->
 <!--      <router-link v-if="this.$session && this.$session.get('token') != null" :to="'/wishlists/'">Wishlists</router-link>-->
       <router-link :to="'/wishlists/'">Wishlists</router-link>
     </div>
